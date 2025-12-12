@@ -238,8 +238,10 @@ exports.makeBookPaymentController = async (req, res) => {
             payment_method_types: ["card"],
             line_items,
             mode: 'payment',
-            success_url: 'http://localhost:5173/payment-success',
-            cancel_url: "http://localhost:5173/payment-error"
+            // success_url: 'http://localhost:5173/payment-success',
+            // cancel_url: "http://localhost:5173/payment-error"
+            success_url: 'https://book-store-frontend-ten-sandy.vercel.app/payment-success',
+            cancel_url: "https://book-store-frontend-ten-sandy.vercel.app/payment-error"
 
 
         });
